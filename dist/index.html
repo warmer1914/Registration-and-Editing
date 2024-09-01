@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>staticReact</title>
+  <script src="__blocklet__.js"></script>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico?imageFilter=convert&f=png&w=32" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#4F6AF5" />
+  
+  <link rel="stylesheet" crossorigin href="/.blocklet/proxy/z2qaBJxi66vhk1FptA9Z2ZRcyHdmagyMdh5E4/assets/index-orXlDILx.css">
+</head>
+
+<body>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="app"><style>
+  body,
+  html,
+  #app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .spinner-wrapper {
+    width: 70px;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spinner {
+    width: 70px;
+    text-align: center;
+  }
+
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #8abaf0;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  #loadingImage {
+    margin-bottom: 16px;
+    object-fit: contain;
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+      -webkit-transform: scale(0);
+    }
+    40% {
+      -webkit-transform: scale(1);
+    }
+  }
+
+  @keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+    40% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  </style>
+  <div class="spinner-wrapper">
+    <img id="loadingImage" width="70" height="70" />
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+  <script>
+    (() => {
+      const loadingImage = document.getElementById('loadingImage');
+      if (window?.blocklet?.appLogo) {
+        loadingImage.src = window.blocklet.appLogo;
+      } else {
+        loadingImage.src = "/.well-known/service/blocklet/logo?imageFilter=convert&f=png&w=80";
+      }
+    })();
+  </script></div>
+<script type="module" crossorigin src="/.blocklet/proxy/z2qaBJxi66vhk1FptA9Z2ZRcyHdmagyMdh5E4/assets/index-DT7Y33E9.js"></script></body>
+
+</html>
